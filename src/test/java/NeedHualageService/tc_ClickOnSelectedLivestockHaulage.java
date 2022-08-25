@@ -16,6 +16,6 @@ public class tc_ClickOnSelectedLivestockHaulage extends NeedHaulageService {
         verifyMessageSelectedDeliveryService();
         selectHaulageService();
         signOut();
-        report.endReporting();
+        reportEnd();
     }
 }

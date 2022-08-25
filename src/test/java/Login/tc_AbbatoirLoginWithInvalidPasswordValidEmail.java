@@ -22,6 +22,6 @@ public class tc_AbbatoirLoginWithInvalidPasswordValidEmail extends LoginSteps {
 
         closeDrive();
 
-        report.endReporting();
+        reportEnd();
     }
 }

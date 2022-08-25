@@ -13,6 +13,6 @@ public class tc_VerifyNeedHaulagePreviewPageAndBack extends NeedHaulageService {
         verifyPreviewPage();
         clickBackButton();
         signOut();
-        report.endReporting();
+        reportEnd();
     }
 }

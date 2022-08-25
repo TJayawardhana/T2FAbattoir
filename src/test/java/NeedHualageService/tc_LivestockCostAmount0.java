@@ -17,7 +17,7 @@ public class tc_LivestockCostAmount0 extends NeedHaulageService{
         haulageServiceManualAmount();
         clickOnSendRequestButton();
         signOut();
-        report.endReporting();
+        reportEnd();
 
     }
 }

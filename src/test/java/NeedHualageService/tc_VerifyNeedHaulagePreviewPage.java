@@ -12,6 +12,6 @@ public class tc_VerifyNeedHaulagePreviewPage extends NeedHaulageService {
         clickNeedHaulageServiceStatus();
         verifyPreviewPage();
         signOut();
-        report.endReporting();
+        reportEnd();
     }
 }

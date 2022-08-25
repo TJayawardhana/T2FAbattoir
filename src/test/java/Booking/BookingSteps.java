@@ -18,7 +18,7 @@ public class BookingSteps extends LoginSteps {
             report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
         }
 
-        Thread.sleep(5000);
+        Thread.sleep(8000);
     }
 
     //STATUS//
@@ -33,7 +33,7 @@ public class BookingSteps extends LoginSteps {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "Processing Status is not Clickable");
         }
-        Thread.sleep(5000);
+        Thread.sleep(8000);
     }
 
     //NEED HAULAGE SERVICE
@@ -46,7 +46,7 @@ public class BookingSteps extends LoginSteps {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "Need Haulage Service Status is not Loading");
         }
-        Thread.sleep(5000);
+        Thread.sleep(8000);
     }
 
     //PENDING
@@ -59,7 +59,7 @@ public class BookingSteps extends LoginSteps {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "Pending is not Clickable");
         }
-        Thread.sleep(5000);
+        Thread.sleep(8000);
     }
 
     //PROCESSING
@@ -73,7 +73,7 @@ public class BookingSteps extends LoginSteps {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "Booking Page is not Loading");
         }
-        Thread.sleep(5000);
+        Thread.sleep(8000);
     }
     //////////////////////
 
@@ -89,7 +89,7 @@ public class BookingSteps extends LoginSteps {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "Booking Page is not Loading");
         }
-        Thread.sleep(5000);
+        Thread.sleep(8000);
     }
 
     //PREVIEW PAGE HEADER
@@ -102,7 +102,7 @@ public class BookingSteps extends LoginSteps {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "Preview Page is not Displaying");
         }
-        Thread.sleep(5000);
+        Thread.sleep(8000);
     }
 
 }

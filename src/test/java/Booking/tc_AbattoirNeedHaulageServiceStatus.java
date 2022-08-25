@@ -17,7 +17,7 @@ public class tc_AbattoirNeedHaulageServiceStatus extends BookingSteps {
         clickNeedHaulageServiceStatus();
         verifyPreviewPageHeader();
         signOut();
-        report.endReporting();
+        reportEnd();
     }
 
 }

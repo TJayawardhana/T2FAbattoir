@@ -23,6 +23,6 @@ public class tc_AbbatoirLoginWithWrongEmailFormatValidPassword extends LoginStep
 
         closeDrive();
 
-        report.endReporting();
+        reportEnd();
     }
 }

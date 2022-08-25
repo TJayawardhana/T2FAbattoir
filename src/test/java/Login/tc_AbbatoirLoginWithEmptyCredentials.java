@@ -108,7 +108,7 @@ public class tc_AbbatoirLoginWithEmptyCredentials extends LoginSteps {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "Drive Quit Unsuccessfully");
         }*/
-        report.endReporting();
+        reportEnd();
 
     }
 }

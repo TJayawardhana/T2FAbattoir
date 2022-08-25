@@ -22,6 +22,6 @@ public class tc_VerifyBookings extends BookingSteps {
         clickBookingTab();
         verifyBookingPageHeader();
         signOut();
-        report.endReporting();
+        reportEnd();
     }
 }

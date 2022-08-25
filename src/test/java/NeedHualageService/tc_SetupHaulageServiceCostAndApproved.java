@@ -20,8 +20,8 @@ public class tc_SetupHaulageServiceCostAndApproved extends NeedHaulageService{
         verifyMessageSuccessfulSelectDeliveryService();
         clickApproveOrRejectStock();
         clickApproveButton();
-        verifyMessageBooking();
+        verifyMessageBookingApprove();
         signOut();
-        report.endReporting();
+        reportEnd();
     }
 }

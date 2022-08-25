@@ -218,5 +218,8 @@ public class LoginSteps extends OpenWeb {
         clickSignOut();
         closeDrive();
     }
+    public static void reportEnd(){
+        report.endReporting();
+    }
 
 }

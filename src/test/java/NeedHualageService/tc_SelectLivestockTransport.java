@@ -13,6 +13,6 @@ public class tc_SelectLivestockTransport extends NeedHaulageService {
         selectHaulageService();
         verifyMessageSelectedDeliveryService();
         signOut();
-        report.endReporting();
+        reportEnd();
     }
 }

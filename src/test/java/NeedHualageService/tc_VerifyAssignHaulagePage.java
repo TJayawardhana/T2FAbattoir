@@ -12,7 +12,7 @@ public class tc_VerifyAssignHaulagePage extends NeedHaulageService {
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         signOut();
-        report.endReporting();
+        reportEnd();
 
     }
 }

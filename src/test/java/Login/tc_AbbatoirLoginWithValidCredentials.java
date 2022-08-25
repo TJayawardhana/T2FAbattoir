@@ -22,6 +22,6 @@ public class tc_AbbatoirLoginWithValidCredentials extends LoginSteps {
 
         closeDrive();
 
-        report.endReporting();
+        reportEnd();
     }
 }

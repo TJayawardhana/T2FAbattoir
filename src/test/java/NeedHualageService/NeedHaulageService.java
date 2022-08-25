@@ -65,7 +65,7 @@ public class NeedHaulageService extends BookingSteps {
         Thread.sleep(5000);
     }
     //Verify Booking Message
-    public static void verifyMessageBooking() throws InterruptedException {
+    public static void verifyMessageBookingApprove() throws InterruptedException {
         try {
             // Verify Message
             String expectedText = " Booking approved ";

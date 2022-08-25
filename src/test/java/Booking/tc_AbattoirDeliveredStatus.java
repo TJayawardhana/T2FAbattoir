@@ -17,7 +17,7 @@ public class tc_AbattoirDeliveredStatus {
         clickBookingTab();
         clickDeliveryProcessStatus();
         signOut();
-        report.endReporting();
+        reportEnd();
     }
 
     //TEST STEPS

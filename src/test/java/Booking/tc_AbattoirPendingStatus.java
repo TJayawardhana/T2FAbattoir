@@ -17,6 +17,6 @@ public class tc_AbattoirPendingStatus extends BookingSteps {
         verifyBookingPageHeader();
         clickPendingStatus();
         signOut();
-        report.endReporting();
+        reportEnd();
     }
 }
