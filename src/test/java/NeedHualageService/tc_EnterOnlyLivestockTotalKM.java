@@ -13,7 +13,7 @@ public class tc_EnterOnlyLivestockTotalKM extends NeedHaulageService {
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         selectHaulageService();
-        verifyMessage();
+        verifyMessageSelectedDeliveryService();
         editHaulageServiceCost();
         clickOnSendRequestButton();
         signOut();

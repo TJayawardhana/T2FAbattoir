@@ -12,7 +12,7 @@ public class tc_SelectLivestockAndClickOnSendRequestButton extends NeedHaulageSe
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         selectHaulageService();
-        verifyMessage();
+        verifyMessageSelectedDeliveryService();
         clickOnSendRequestButton();
         signOut();
         report.endReporting();

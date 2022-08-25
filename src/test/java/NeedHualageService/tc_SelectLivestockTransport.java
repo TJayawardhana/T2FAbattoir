@@ -11,7 +11,7 @@ public class tc_SelectLivestockTransport extends NeedHaulageService {
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         selectHaulageService();
-        verifyMessage();
+        verifyMessageSelectedDeliveryService();
         signOut();
         report.endReporting();
     }

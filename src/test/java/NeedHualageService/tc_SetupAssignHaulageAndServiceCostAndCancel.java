@@ -12,7 +12,7 @@ public class tc_SetupAssignHaulageAndServiceCostAndCancel extends NeedHaulageSer
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         selectHaulageService();
-        verifyMessage();
+        verifyMessageSelectedDeliveryService();
         editHaulageServiceCost();
         haulageServiceManualAmount();
         clickCancelButton();

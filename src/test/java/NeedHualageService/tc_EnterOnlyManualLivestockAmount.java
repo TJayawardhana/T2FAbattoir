@@ -12,7 +12,7 @@ public class tc_EnterOnlyManualLivestockAmount extends NeedHaulageService {
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         selectHaulageService();
-        verifyMessage();
+        verifyMessageSelectedDeliveryService();
         haulageServiceManualAmount();
         clickOnSendRequestButton();
         signOut();

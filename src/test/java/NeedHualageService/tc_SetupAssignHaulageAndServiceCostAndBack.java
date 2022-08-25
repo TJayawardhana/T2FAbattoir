@@ -6,13 +6,14 @@ public class tc_SetupAssignHaulageAndServiceCostAndBack extends NeedHaulageServi
     }
 
     public static void setupAssignHaulageAndServiceCostAndBack() throws InterruptedException {
+        report.createReport("tc_SetupAssignHaulageAndServiceCostAndBack");
         openBrowser();
         login();
         clickBookingTab();
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         selectHaulageService();
-        verifyMessage();
+        verifyMessageSelectedDeliveryService();
         editHaulageServiceCost();
         haulageServiceManualAmount();
         clickCancelButton();
