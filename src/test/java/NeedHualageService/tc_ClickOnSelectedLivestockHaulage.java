@@ -1,7 +1,5 @@
 package NeedHualageService;
 
-import static OpenBrowser.OpenWeb.openBrowser;
-
 public class tc_ClickOnSelectedLivestockHaulage extends NeedHaulageService {
     public static void main(String[] args) throws InterruptedException {
         clickOnSelectedLivestockHaulage();
@@ -15,7 +13,7 @@ public class tc_ClickOnSelectedLivestockHaulage extends NeedHaulageService {
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         selectHaulageService();
-        verifyMessage();
+        verifyMessageSelectedDeliveryService();
         selectHaulageService();
         signOut();
         report.endReporting();

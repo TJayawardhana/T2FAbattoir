@@ -13,7 +13,7 @@ public class tc_EmptyLivestockCostFields extends NeedHaulageService {
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         selectHaulageService();
-        verifyMessage();
+        verifyMessageSelectedDeliveryService();
         editHaulageServiceCost();
         haulageServiceManualAmount();
         clickOnSendRequestButton();
