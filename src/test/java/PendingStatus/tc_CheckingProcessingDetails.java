@@ -5,7 +5,7 @@ public class tc_CheckingProcessingDetails extends PendingStatusSteps {
         checkingProcessingDetails();
     }
 
-    public static void checkingProcessingDetails() throws InterruptedException {
+    private static void checkingProcessingDetails() throws InterruptedException {
         report.createReport("tc_CancleStockDetailsPage");
         openBrowser();
         login();

@@ -4,7 +4,7 @@ public class tc_ApproveDeliveries extends PendingStatusSteps{
     public static void main(String[] args) throws InterruptedException {
         approveDeliveries();
     }
-    public static void approveDeliveries() throws InterruptedException {
+    private static void approveDeliveries() throws InterruptedException {
         report.createReport("tc_ApproveDeliveries");
         openBrowser();
         login();

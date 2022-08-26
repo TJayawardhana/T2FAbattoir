@@ -4,7 +4,7 @@ public class tc_VerifyNeedHaulagePreviewPageAndBack extends NeedHaulageService {
     public static void main(String[] args) throws InterruptedException {
         verifyNeedHaulagePreviewPageAndBack();
     }
-    public static void verifyNeedHaulagePreviewPageAndBack() throws InterruptedException {
+    private static void verifyNeedHaulagePreviewPageAndBack() throws InterruptedException {
         report.createReport("tc_VerifyNeedHaulagePreviewPage");
         openBrowser();
         login();

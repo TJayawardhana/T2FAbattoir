@@ -8,7 +8,7 @@ public class tc_AbbatoirLoginWithWrongPasswordFormatInvalidEmail extends LoginSt
         wrongPasswordFormatInvalidEmail();
     }
 
-    public static void wrongPasswordFormatInvalidEmail() throws InterruptedException {
+    private static void wrongPasswordFormatInvalidEmail() throws InterruptedException {
         report.createReport("Login.tc_AbbatoirLoginWithWrongPasswordFormatInvalidEmail");
         enterInvalidEmail();
 

@@ -9,7 +9,7 @@ public class tc_AbattoirPendingStatus extends BookingSteps {
     public static void main(String[] args) throws InterruptedException {
         abattoirPendingStatus();
     }
-    public static void abattoirPendingStatus() throws InterruptedException {
+    private static void abattoirPendingStatus() throws InterruptedException {
         report.createReport("tc_AbattoirPendingStatus");
         openBrowser();
         login();

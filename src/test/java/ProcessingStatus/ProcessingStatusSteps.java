@@ -29,4 +29,8 @@ public class ProcessingStatusSteps extends PendingStatusSteps {
         }
         Thread.sleep(5000);
     }
+    //Click Cancel Button
+    public static void clickCancel(){
+        driver.findElement(By.xpath("//button[@class=\"btn btn-brown\"]")).click();
+    }
 }

@@ -10,7 +10,7 @@ public class tc_AbattoirDeliveredStatus {
 //        Report report = new Report();
         abattoirDeliveredStatus();
     }
-    public static void abattoirDeliveredStatus() throws InterruptedException {
+    private static void abattoirDeliveredStatus() throws InterruptedException {
         report.createReport("tc_AbattoirDeliveredStatus");
         openBrowser();
         login();

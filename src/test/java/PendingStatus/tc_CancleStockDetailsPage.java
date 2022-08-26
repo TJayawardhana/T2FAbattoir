@@ -5,7 +5,7 @@ public class tc_CancleStockDetailsPage extends PendingStatusSteps {
         cancleStockDetailsPage();
     }
 
-    public static void cancleStockDetailsPage() throws InterruptedException {
+    private static void cancleStockDetailsPage() throws InterruptedException {
         report.createReport("tc_CancleStockDetailsPage");
         openBrowser();
         login();

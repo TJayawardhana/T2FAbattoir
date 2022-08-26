@@ -5,7 +5,7 @@ public class tc_EmptyLivestockCostFields extends NeedHaulageService {
         emptyLivestockCostFields();
     }
 
-    public static void emptyLivestockCostFields() throws InterruptedException {
+    private static void emptyLivestockCostFields() throws InterruptedException {
         report.createReport("tc_EmptyLivestockCostFields");
         openBrowser();
         login();
@@ -13,7 +13,7 @@ public class tc_EmptyLivestockCostFields extends NeedHaulageService {
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         selectHaulageService();
-        verifyMessageSelectedDeliveryService();
+        verifyABCMessageSelectedDeliveryService();
         editHaulageServiceCost();
         haulageServiceManualAmount();
         clickOnSendRequestButton();

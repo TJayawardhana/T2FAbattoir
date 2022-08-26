@@ -5,7 +5,7 @@ public class tc_AddingOnlyManualAmounts extends ProcessingStatusSteps {
 
         addingOnlyManualAmounts();
     }
-    public static void addingOnlyManualAmounts() throws InterruptedException {
+    private static void addingOnlyManualAmounts() throws InterruptedException {
         report.createReport("tc_CancleStockDetailsPage");
         openBrowser();
         login();

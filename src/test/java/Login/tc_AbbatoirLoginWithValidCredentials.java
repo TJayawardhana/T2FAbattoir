@@ -8,7 +8,7 @@ public class tc_AbbatoirLoginWithValidCredentials extends LoginSteps {
         validCredentials();
     }
 
-    public static void validCredentials() throws InterruptedException {
+    private static void validCredentials() throws InterruptedException {
         report.createReport("Login.tc_AbbatoirLoginWithValidCredentials");
         enterValidEmail();
 

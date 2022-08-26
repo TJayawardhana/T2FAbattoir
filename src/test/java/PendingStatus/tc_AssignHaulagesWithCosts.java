@@ -4,7 +4,7 @@ public class tc_AssignHaulagesWithCosts extends PendingStatusSteps {
     public static void main(String[] args) throws InterruptedException {
 assignHaulagesWithCosts();
     }
-    public static void assignHaulagesWithCosts() throws InterruptedException {
+    private static void assignHaulagesWithCosts() throws InterruptedException {
         report.createReport("tc_AssignHaulagesWithCosts");
         openBrowser();
         login();

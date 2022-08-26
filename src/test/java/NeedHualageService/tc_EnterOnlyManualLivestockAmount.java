@@ -4,7 +4,7 @@ public class tc_EnterOnlyManualLivestockAmount extends NeedHaulageService {
     public static void main(String[] args) throws InterruptedException {
         enterOnlyManualLivestockAmount();
     }
-    public static void enterOnlyManualLivestockAmount() throws InterruptedException {
+    private static void enterOnlyManualLivestockAmount() throws InterruptedException {
         report.createReport("tc_EnterOnlyManualLivestockAmount");
         openBrowser();
         login();
@@ -12,7 +12,7 @@ public class tc_EnterOnlyManualLivestockAmount extends NeedHaulageService {
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         selectHaulageService();
-        verifyMessageSelectedDeliveryService();
+        verifyABCMessageSelectedDeliveryService();
         haulageServiceManualAmount();
         clickOnSendRequestButton();
         signOut();

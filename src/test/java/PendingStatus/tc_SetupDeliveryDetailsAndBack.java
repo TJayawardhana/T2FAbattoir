@@ -5,7 +5,7 @@ public class tc_SetupDeliveryDetailsAndBack extends PendingStatusSteps {
         setupDeliveryDetailsAndBack();
     }
 
-    public static void setupDeliveryDetailsAndBack() throws InterruptedException {
+    private static void setupDeliveryDetailsAndBack() throws InterruptedException {
         report.createReport("tc_CancleStockDetailsPage");
         openBrowser();
         login();

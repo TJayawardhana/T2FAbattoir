@@ -5,7 +5,7 @@ public class tc_EnterOnlyLivestockTotalKM extends NeedHaulageService {
         enterOnlyLivestockTotalKM();
     }
 
-    public static void enterOnlyLivestockTotalKM() throws InterruptedException {
+    private static void enterOnlyLivestockTotalKM() throws InterruptedException {
         report.createReport("tc_EnterOnlyLivestockTotalKM");
         openBrowser();
         login();
@@ -13,7 +13,7 @@ public class tc_EnterOnlyLivestockTotalKM extends NeedHaulageService {
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         selectHaulageService();
-        verifyMessageSelectedDeliveryService();
+        verifyABCMessageSelectedDeliveryService();
         editHaulageServiceCost();
         clickOnSendRequestButton();
         signOut();
