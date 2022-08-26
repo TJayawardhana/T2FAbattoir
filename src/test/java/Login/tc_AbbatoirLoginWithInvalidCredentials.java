@@ -13,7 +13,7 @@ public class tc_AbbatoirLoginWithInvalidCredentials extends LoginSteps {
         invalidCredentials();
     }
 
-    public static void invalidCredentials() throws InterruptedException {
+    private static void invalidCredentials() throws InterruptedException {
 //        Report report = new Report();
         report.createReport("tc_AbbatoirLoginWithInvalidCredentials");
         enterInvalidEmail();

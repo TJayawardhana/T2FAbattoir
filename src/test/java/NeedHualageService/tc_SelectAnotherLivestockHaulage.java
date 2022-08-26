@@ -4,7 +4,7 @@ public class tc_SelectAnotherLivestockHaulage extends NeedHaulageService {
     public static void main(String[] args) throws InterruptedException {
         selectAnotherLivestockHaulage();
     }
-    public static void selectAnotherLivestockHaulage() throws InterruptedException {
+    private static void selectAnotherLivestockHaulage() throws InterruptedException {
         report.createReport("tc_SelectAnotherLivestockHaulage");
         openBrowser();
         login();
@@ -12,7 +12,7 @@ public class tc_SelectAnotherLivestockHaulage extends NeedHaulageService {
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         selectHaulageService();
-        verifyMessageSelectedDeliveryService();
+        verifyABCMessageSelectedDeliveryService();
         signOut();
         reportEnd();
     }

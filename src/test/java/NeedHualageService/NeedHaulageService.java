@@ -38,7 +38,7 @@ public class NeedHaulageService extends BookingSteps {
 
     //VERIFY MESSAGE//
     //Verify Message For Selected Delivery Service
-    public static void verifyMessageSelectedDeliveryService() throws InterruptedException {
+    public static void verifyABCMessageSelectedDeliveryService() throws InterruptedException {
         try {
             // Verify Message
             String expectedText = " ABC selected as meat delivery service ";
@@ -48,6 +48,11 @@ public class NeedHaulageService extends BookingSteps {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "Verify Message is not Displaying");
         }
+        Thread.sleep(5000);
+    }
+    //JKL Delivery service message
+    public static void verifyJKLMessageSelectedDeliveryService() throws InterruptedException {
+        driver.findElement(By.xpath("(//button[text()='Select'])[2]")).click();
         Thread.sleep(5000);
     }
 

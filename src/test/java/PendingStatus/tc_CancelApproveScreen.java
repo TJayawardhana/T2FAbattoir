@@ -5,7 +5,7 @@ public class tc_CancelApproveScreen extends PendingStatusSteps{
         cancelApproveScreen();
     }
 
-    public static void cancelApproveScreen() throws InterruptedException {
+    private static void cancelApproveScreen() throws InterruptedException {
         report.createReport("tc_CancelApproveScreen");
         openBrowser();
         login();

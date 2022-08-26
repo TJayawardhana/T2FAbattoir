@@ -4,7 +4,7 @@ public class tc_LivestockCostAmount0 extends NeedHaulageService{
     public static void main(String[] args) throws InterruptedException {
         livestockCostAmount0();
     }
-    public static void livestockCostAmount0() throws InterruptedException {
+    private static void livestockCostAmount0() throws InterruptedException {
         report.createReport("tc_LivestockCostAmount0");
         openBrowser();
         login();
@@ -12,7 +12,7 @@ public class tc_LivestockCostAmount0 extends NeedHaulageService{
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         selectHaulageService();
-        verifyMessageSelectedDeliveryService();
+        verifyABCMessageSelectedDeliveryService();
         editHaulageServiceCost();
         haulageServiceManualAmount();
         clickOnSendRequestButton();

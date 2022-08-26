@@ -8,7 +8,7 @@ public class tc_AbattoirNeedHaulageServiceStatus extends BookingSteps {
         abattoirNeedHaulageServiceStatus();
     }
 
-    public static void abattoirNeedHaulageServiceStatus() throws InterruptedException {
+    private static void abattoirNeedHaulageServiceStatus() throws InterruptedException {
         report.createReport("tc_AbattoirNeedHaulageServiceStatus");
         openBrowser();
         login();

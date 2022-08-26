@@ -5,7 +5,7 @@ public class tc_AssignHaulages extends PendingStatusSteps{
 
         assignHaulages();
     }
-    public static void assignHaulages() throws InterruptedException {
+    private static void assignHaulages() throws InterruptedException {
         report.createReport("tc_AssignHaulages");
         openBrowser();
         login();

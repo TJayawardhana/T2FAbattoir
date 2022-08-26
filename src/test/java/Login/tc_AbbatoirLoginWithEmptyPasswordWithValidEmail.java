@@ -13,7 +13,7 @@ public class tc_AbbatoirLoginWithEmptyPasswordWithValidEmail extends LoginSteps 
         emptyPasswordWithValidEmail();
     }
 
-    public static void emptyPasswordWithValidEmail() throws InterruptedException {
+    private static void emptyPasswordWithValidEmail() throws InterruptedException {
 //        Report report = new Report();
         report.createReport("tc_AbbatoirLoginWithEmptyPasswordWithValidEmail");
         /*try {

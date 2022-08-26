@@ -4,7 +4,7 @@ public class tc_SetupDeliveryDetailsAndCancel extends PendingStatusSteps {
     public static void main(String[] args) throws InterruptedException {
         setupDeliveryDetailsAndCancel();
     }
-    public static void setupDeliveryDetailsAndCancel() throws InterruptedException {
+    private static void setupDeliveryDetailsAndCancel() throws InterruptedException {
         report.createReport("tc_CancleStockDetailsPage");
         openBrowser();
         login();

@@ -5,7 +5,7 @@ public class tc_BackOnPendingStatus extends PendingStatusSteps {
         backOnPendingStatus();
     }
 
-    public static void backOnPendingStatus() throws InterruptedException {
+    private static void backOnPendingStatus() throws InterruptedException {
         report.createReport("tc_BackOnPendingStatus");
         openBrowser();
         login();

@@ -5,7 +5,7 @@ public class tc_SetupHaulageServiceCostAndApproved extends NeedHaulageService{
         setupHaulageServiceCostAndApproved();
     }
 
-    public static void setupHaulageServiceCostAndApproved() throws InterruptedException {
+    private static void setupHaulageServiceCostAndApproved() throws InterruptedException {
         report.createReport("tc_SetupHaulageServiceCostAndApproved");
         openBrowser();
         login();
@@ -13,7 +13,7 @@ public class tc_SetupHaulageServiceCostAndApproved extends NeedHaulageService{
         clickNeedHaulageServiceStatus();
         clickAssignHaulage();
         selectHaulageService();
-        verifyMessageSelectedDeliveryService();
+        verifyABCMessageSelectedDeliveryService();
         editHaulageServiceCost();
         haulageServiceManualAmount();
         clickOnSendRequestButton();
