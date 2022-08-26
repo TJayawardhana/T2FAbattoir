@@ -101,7 +101,7 @@ public class tc_AbbatoirLoginWithEmptyEmailWithValidPassword extends LoginSteps 
         closeDrive();
 
 
-        report.endReporting();
+        reportEnd();
 
     }
 

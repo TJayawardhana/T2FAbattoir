@@ -17,6 +17,6 @@ public class tc_EnterOnlyLivestockTotalKM extends NeedHaulageService {
         editHaulageServiceCost();
         clickOnSendRequestButton();
         signOut();
-        report.endReporting();
+        reportEnd();
     }
 }

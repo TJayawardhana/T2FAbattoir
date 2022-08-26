@@ -18,6 +18,6 @@ public class tc_EmptyLivestockCostFields extends NeedHaulageService {
         haulageServiceManualAmount();
         clickOnSendRequestButton();
         signOut();
-        report.endReporting();
+        reportEnd();
     }
 }

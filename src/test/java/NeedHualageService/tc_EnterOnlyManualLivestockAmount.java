@@ -16,6 +16,6 @@ public class tc_EnterOnlyManualLivestockAmount extends NeedHaulageService {
         haulageServiceManualAmount();
         clickOnSendRequestButton();
         signOut();
-        report.endReporting();
+        reportEnd();
     }
 }

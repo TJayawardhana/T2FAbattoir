@@ -18,7 +18,7 @@ public class tc_SetupAssignHaulageAndServiceCostAndBack extends NeedHaulageServi
         haulageServiceManualAmount();
         clickCancelButton();
         signOut();
-        report.endReporting();
+        reportEnd();
 
     }
 }

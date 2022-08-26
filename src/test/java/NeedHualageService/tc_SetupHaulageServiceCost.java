@@ -18,6 +18,6 @@ public class tc_SetupHaulageServiceCost extends NeedHaulageService {
         clickOnSendRequestButton();
         verifyMessageSuccessfulSelectDeliveryService();
         signOut();
-        report.endReporting();
+        reportEnd();
     }
 }

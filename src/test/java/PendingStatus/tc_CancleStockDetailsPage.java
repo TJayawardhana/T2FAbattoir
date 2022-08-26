@@ -1,7 +1,19 @@
 package PendingStatus;
 
-public class tc_CancleStockDetailsPage {
-    public static void main(String[] args) {
+public class tc_CancleStockDetailsPage extends PendingStatusSteps {
+    public static void main(String[] args) throws InterruptedException {
+        cancleStockDetailsPage();
+    }
 
+    public static void cancleStockDetailsPage() throws InterruptedException {
+        report.createReport("tc_CancleStockDetailsPage");
+        openBrowser();
+        login();
+        clickBookingTab();
+        clickPendingStatus();
+        clickStockDetailsIcon();
+        cancelIcon();
+        signOut();
+        reportEnd();
     }
 }

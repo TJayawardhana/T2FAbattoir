@@ -83,7 +83,7 @@ public class tc_AbbatoirLoginWithEmptyPasswordWithValidEmail extends LoginSteps 
             e.printStackTrace();
             report.test.log(LogStatus.FAIL,"Drive Quit Unsuccessfully");
         }*/
-        report.endReporting();
+        reportEnd();
 
     }
 
