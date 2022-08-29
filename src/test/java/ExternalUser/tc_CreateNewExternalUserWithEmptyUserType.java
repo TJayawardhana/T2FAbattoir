@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.concurrent.TimeUnit;
 
-public class tc_CreateNewExternalUserWithEmptyUserType {
+public class tc_CreateNewExternalUserWithEmptyUserType extends ExternalUserSteps {
 
     public static void main(String[] args) throws InterruptedException {
         //Open Browser
@@ -83,6 +83,23 @@ public class tc_CreateNewExternalUserWithEmptyUserType {
         Thread.sleep(7000);
 
         driver.quit();
+        createNewExternalUserWithEmptyUserType();
+    }
 
+    private static void createNewExternalUserWithEmptyUserType() throws InterruptedException {
+        openBrowser();
+        login();
+        mouseHoverOnExternalIcons();
+        clickOnExternalUserTab();
+        clickOnAddNewButtonExternalUSer();
+        keepEmptyUserType();
+        enterFirstName();
+        enterLastName();
+        enterValidContactNumber();
+        enterValidMail();
+        enterValidOrganizationName();
+        enterDoneButtonInExternalUser();
+        closeDrive();
+        reportEnd();
     }
 }

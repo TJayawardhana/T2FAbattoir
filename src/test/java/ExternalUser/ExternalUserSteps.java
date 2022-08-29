@@ -76,7 +76,11 @@ public class ExternalUserSteps extends DeliveryStatusStep {
         Thread.sleep(2000);
     }
     //Keep Last Name Empty
-
+public static void keepEmptyLastName() throws InterruptedException{
+    //Empty Last Name
+    driver.findElement(By.xpath("//input[@formcontrolname=\"lastName\"]")).clear();
+    driver.findElement(By.xpath("//input[@formcontrolname=\"lastName\"]")).sendKeys("");
+}
     //Enter Valid Email
     public static void enterValidMail() throws InterruptedException {
         //Enter Valid Email
@@ -86,7 +90,7 @@ public class ExternalUserSteps extends DeliveryStatusStep {
     }
 
     //Enter Empty Email
-    public static void enterEmptyMail() {
+    public static void keepEmptyMail() {
         //Enter Empty Email
         driver.findElement(By.xpath("//input[@formcontrolname=\"email\"]")).clear();
         driver.findElement(By.xpath("//input[@formcontrolname=\"email\"]")).sendKeys("");
@@ -99,13 +103,20 @@ public class ExternalUserSteps extends DeliveryStatusStep {
         driver.findElement(By.xpath("//input[@formcontrolname=\"organizationName\"]")).sendKeys("ishutOrg");
         Thread.sleep(2000);
     }
+    //Keep Empty Organization Name
+    public static void keepEmptyOrganizationName(){
+        //Empty Valid Organization Name
+        driver.findElement(By.xpath("//input[@formcontrolname=\"organizationName\"]")).clear();
+        driver.findElement(By.xpath("//input[@formcontrolname=\"organizationName\"]")).sendKeys("");
 
+    }
     //EnterValidContactNumber
     public static void enterValidContactNumber() {
         //Enter Valid Contact Number
         driver.findElement(By.xpath("//input[@formcontrolname=\"contactNumber\"]")).clear();
         driver.findElement(By.xpath("//input[@formcontrolname=\"contactNumber\"]")).sendKeys("0123456789");
     }
+
 
     //Empty Contact Number
     public static void keepEmptyContactNumber() throws InterruptedException {

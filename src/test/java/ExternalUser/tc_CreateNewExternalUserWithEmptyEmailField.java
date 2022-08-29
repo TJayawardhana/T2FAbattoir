@@ -95,7 +95,7 @@ public class tc_CreateNewExternalUserWithEmptyEmailField extends ExternalUserSte
         enterFirstName();
         enterLastName();
         enterValidContactNumber();
-        enterEmptyMail();
+        keepEmptyMail();
         enterValidOrganizationName();
         clickOnAddNewButtonExternalUSer();
         closeDrive();
