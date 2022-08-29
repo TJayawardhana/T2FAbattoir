@@ -4,24 +4,18 @@ import static OpenBrowser.OpenWeb.openBrowser;
 
 public class tc_AbbatoirLoginWithWrongPasswordFormatValidEmail extends  LoginSteps{
     public static void main(String[] args) throws InterruptedException {
-        openBrowser();
         wrongPasswordFormatValidEmail();
     }
 
     private static void wrongPasswordFormatValidEmail() throws InterruptedException {
         report.createReport("Login.tc_AbbatoirLoginWithWrongPasswordFormatValidEmail");
+        openBrowser();
         enterValidEmail();
-
         enterWrongPasswordFormat();
-
         clickSignIn();
-
-        clickUserDropdown();
-
+        /*clickUserDropdown();
         clickSignOut();
-
-        closeDrive();
-
+        closeDrive();*/
         reportEnd();
     }
 }
