@@ -23,7 +23,10 @@ public class OpenWeb {
 
         try {
             // Open URL
-            driver.get("https://qa-portal.trade2farm.ie/login");
+            //QA
+//          driver.get("https://qa-portal.trade2farm.ie/login");
+            //DEV
+            driver.get("https://dev-portal.trade2farm.ie/session/sign-in");
             report.test.log(LogStatus.PASS,"Successfully Navigated");
         }catch (Exception e){
             e.printStackTrace();

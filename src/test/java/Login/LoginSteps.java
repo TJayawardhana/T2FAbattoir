@@ -195,7 +195,7 @@ public class LoginSteps extends OpenWeb {
         Thread.sleep(5000);
     }
 
-    static void closeDrive() throws InterruptedException {
+    public static void closeDrive() throws InterruptedException {
         try {
             // Close Drive
             driver.quit();
@@ -211,6 +211,8 @@ public class LoginSteps extends OpenWeb {
         enterValidEmail();
         enterValidPassword();
         clickSignIn();
+        Thread.sleep(5000);
+
     }
 
     public static void signOut() throws InterruptedException {
