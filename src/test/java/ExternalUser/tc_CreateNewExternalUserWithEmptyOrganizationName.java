@@ -90,7 +90,7 @@ public class tc_CreateNewExternalUserWithEmptyOrganizationName extends ExternalU
         login();
         mouseHoverOnExternalIcons();
         clickOnExternalUserTab();
-        clickOnAddNewButtonExternalUSer();
+        clickOnAddNewButtonExternalNInternalUSer();
         selectUserTypeRoleButcher();
         enterFirstName();
         enterLastName();

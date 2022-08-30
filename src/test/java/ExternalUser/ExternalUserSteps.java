@@ -26,7 +26,7 @@ public class ExternalUserSteps extends DeliveryStatusStep {
     }
 
     //Click on Add New Button ExternalUser
-    public static void clickOnAddNewButtonExternalUSer() throws InterruptedException {
+    public static void clickOnAddNewButtonExternalNInternalUSer() throws InterruptedException {
         //Click on Add New Button
         driver.findElement(By.xpath("//span[text()=\"Add New \"]")).click();
         Thread.sleep(7000);

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.concurrent.TimeUnit;
 
-public class tc_CreateNewInternalUserWithEmptyFirstName {
+public class tc_CreateNewInternalUserWithEmptyFirstName extends InternalUserSteps {
     public static void main(String[] args) throws InterruptedException {
         //Open Browser
         System.setProperty("webdriver.chrome.driver","D:\\T2FAbattoir\\driver\\chromedriver.exe");
@@ -81,6 +81,23 @@ public class tc_CreateNewInternalUserWithEmptyFirstName {
         Thread.sleep(7000);
 
         driver.quit();
+createNewInternalUserWithEmptyFirstName();
+    }
 
+    private static void createNewInternalUserWithEmptyFirstName() throws InterruptedException {
+        openBrowser();
+        login();
+        mouseHoverOnExternalIcons();
+        clickOnExternalUserTab();
+        clickOnAddNewButtonExternalNInternalUSer();
+        selectUserTypeRoleButcher();
+        keepEmptyFirstName();
+        enterLastName();
+        enterValidContactNumber();
+        enterValidMail();
+        enterValidOrganizationName();
+        enterDoneButtonInExternalUser();
+        closeDrive();
+        reportEnd();
     }
 }

@@ -10,7 +10,7 @@ public class tc_CreateNewExternalUserWithEmptyContactNumber extends ExternalUser
         login();
         mouseHoverOnExternalIcons();
         clickOnExternalUserTab();
-        clickOnAddNewButtonExternalUSer();
+        clickOnAddNewButtonExternalNInternalUSer();
         selectUserTypeRoleButcher();
         enterFirstName();
         enterLastName();

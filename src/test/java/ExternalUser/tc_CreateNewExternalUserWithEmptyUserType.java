@@ -91,7 +91,7 @@ public class tc_CreateNewExternalUserWithEmptyUserType extends ExternalUserSteps
         login();
         mouseHoverOnExternalIcons();
         clickOnExternalUserTab();
-        clickOnAddNewButtonExternalUSer();
+        clickOnAddNewButtonExternalNInternalUSer();
         keepEmptyUserType();
         enterFirstName();
         enterLastName();
