@@ -211,6 +211,8 @@ public class LoginSteps extends OpenWeb {
         enterValidEmail();
         enterValidPassword();
         clickSignIn();
+        Thread.sleep(5000);
+
     }
 
     public static void signOut() throws InterruptedException {
