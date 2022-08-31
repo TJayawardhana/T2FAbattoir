@@ -11,8 +11,9 @@ public class OpenWeb {
 
     public static void main(String[] args) throws InterruptedException {
         openBrowser();
+
     }
-    public static void openBrowser(){
+    public static void openBrowser() throws InterruptedException {
         Report report = new Report();
         report.createReport("Login.tc_AbbatoirLoginWithEmptyCredentials");
         // Open Browser
@@ -35,7 +36,7 @@ public class OpenWeb {
 
         // Maximise the Browser
         driver.manage().window().maximize();
-
+        Thread.sleep(7000);
     }
 
 }
