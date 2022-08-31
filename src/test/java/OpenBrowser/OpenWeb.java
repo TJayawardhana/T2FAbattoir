@@ -6,13 +6,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import Report.Report;
 
+import java.util.concurrent.TimeUnit;
+
 public class OpenWeb {
     public static WebDriver driver;
 
     public static void main(String[] args) throws InterruptedException {
         openBrowser();
+
     }
-    public static void openBrowser(){
+    public static void openBrowser() throws InterruptedException {
         Report report = new Report();
         report.createReport("Login.tc_AbbatoirLoginWithEmptyCredentials");
         // Open Browser
@@ -35,7 +38,13 @@ public class OpenWeb {
 
         // Maximise the Browser
         driver.manage().window().maximize();
+        Thread.sleep(7000);
+    }
 
+    //Implicitly Waits
+    public static void implicitlyWaits() {
+        //Implicitly Waits
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
 }

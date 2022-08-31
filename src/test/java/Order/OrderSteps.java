@@ -9,12 +9,12 @@ import static org.testng.AssertJUnit.assertTrue;
 public class OrderSteps extends InternalUserSteps {
     public static void clickOrderTab() throws InterruptedException {
         try {
-            // Click on Bookings Tab
+            // Click on Order Tab
             driver.findElement(By.xpath("(//div[@class='nav-item-hold ng-star-inserted'])[3]")).click();
-            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+            report.test.log(LogStatus.PASS, "Successfully Clicked Order Tab");
         }catch (Exception e){
             e.printStackTrace();
-            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+            report.test.log(LogStatus.FAIL,"Order Tab is not Clickable");
         }
 
         Thread.sleep(8000);

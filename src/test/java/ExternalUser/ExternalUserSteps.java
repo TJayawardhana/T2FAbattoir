@@ -133,10 +133,5 @@ public static void keepEmptyLastName() throws InterruptedException{
         Thread.sleep(7000);
     }
 
-    //Implicitly Waits
-    public static void implicitlyWaits() {
-        //Implicitly Waits
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-    }
 
 }
