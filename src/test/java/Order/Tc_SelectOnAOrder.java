@@ -9,6 +9,8 @@ public class Tc_SelectOnAOrder extends OrderSteps{
         login();
         clickOrderTab();
         clickOnAOrder();
+        signOut();
+        reportEnd();
         
     }
 }
