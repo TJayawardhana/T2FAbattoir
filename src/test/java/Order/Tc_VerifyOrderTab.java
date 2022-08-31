@@ -9,7 +9,7 @@ public class Tc_VerifyOrderTab extends OrderSteps {
         openBrowser();
         login();
         clickOrderTab();
-        verifyOrderPageHeader();
+//      verifyOrderPageHeader();
         signOut();
         reportEnd();
     }

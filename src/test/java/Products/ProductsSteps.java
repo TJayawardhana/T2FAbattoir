@@ -18,10 +18,10 @@ public class ProductsSteps extends OrderSteps {
         try {
             // Click on Create new Product Tab
             driver.findElement(By.xpath("(//li[@class='nav-item ng-star-inserted'])[2]")).click();
-            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+            report.test.log(LogStatus.PASS, "Successfully Clicked Product Tab");
         }catch (Exception e){
             e.printStackTrace();
-            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+            report.test.log(LogStatus.FAIL,"Product Tab is not Clickable");
         }
 
         Thread.sleep(8000);
@@ -30,58 +30,58 @@ public class ProductsSteps extends OrderSteps {
         try {
             // Click on Create new Product Tab
             driver.findElement(By.xpath("//select[@class='form-control ng-dirty ng-valid ng-touched']")).click();
-            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+            report.test.log(LogStatus.PASS, "Successfully Clicked Create new product Button");
         }catch (Exception e){
             e.printStackTrace();
-            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+            report.test.log(LogStatus.FAIL," Create new product Button is not Clickable");
         }
 
         Thread.sleep(8000);
     }
     public static void selectProductAsBeef() throws InterruptedException {
         try {
-            // Click on Create new Product Tab
+            // Click on Select Product As Beef
             driver.findElement(By.xpath("(//option[@class='ng-star-inserted'])[1]")).click();
-            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+            report.test.log(LogStatus.PASS, "Successfully Selected Meat Category as Beef");
         }catch (Exception e){
             e.printStackTrace();
-            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+            report.test.log(LogStatus.FAIL,"Beef Meat category is not Selectable");
         }
 
         Thread.sleep(8000);
     }
     public static void selectProductAsPork() throws InterruptedException {
         try {
-            // Click on Create new Product Tab
+            //  Click on Select Product As Pork
             driver.findElement(By.xpath("(//option[@class='ng-star-inserted'])[2]")).click();
-            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+            report.test.log(LogStatus.PASS, "Successfully Selected Meat Category as Pork");
         }catch (Exception e){
             e.printStackTrace();
-            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+            report.test.log(LogStatus.FAIL,"Pork Meat category is not Selectable");
         }
 
         Thread.sleep(8000);
     }
     public static void selectProductAsLamb() throws InterruptedException {
         try {
-            // Click on Create new Product Tab
+            //  Click on Select Product As Lamb
             driver.findElement(By.xpath("(//option[@class='ng-star-inserted'])[3]")).click();
-            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+            report.test.log(LogStatus.PASS, "Successfully Selected Meat Category as Lamb");
         }catch (Exception e){
             e.printStackTrace();
-            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+            report.test.log(LogStatus.FAIL,"Lamb Meat category is not Selectable");
         }
 
         Thread.sleep(8000);
     }
     public static void selectProductAsGoat() throws InterruptedException {
         try {
-            // Click on Create new Product Tab
+            //  Click on Select Product As Goat
             driver.findElement(By.xpath("(//option[@class='ng-star-inserted'])[4]")).click();
-            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+            report.test.log(LogStatus.PASS, "Successfully Selected Meat Category as Goat");
         }catch (Exception e){
             e.printStackTrace();
-            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+            report.test.log(LogStatus.FAIL,"Goat Meat category is not Selectable");
         }
 
         Thread.sleep(8000);
