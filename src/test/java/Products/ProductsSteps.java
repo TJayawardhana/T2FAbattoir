@@ -89,9 +89,10 @@ public class ProductsSteps extends OrderSteps {
     public static void enterProductName() throws InterruptedException {
         try {
             // Click on Create new Product Tab
-            driver.findElement(By.xpath("//input[@class='form-control ng-pristine ng-invalid ng-touched']")).clear();
-            driver.findElement(By.xpath("//input[@class='form-control ng-pristine ng-invalid ng-touched']")).sendKeys("Beef Buy");
-
+            /*driver.findElement(By.xpath("//input[@class='form-control ng-pristine ng-invalid ng-touched']")).clear();
+            driver.findElement(By.xpath("//input[@class='form-control ng-pristine ng-invalid ng-touched']")).sendKeys("BeefBuy");*/
+            driver.findElement(By.xpath("//input[@formcontrolname='productName']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='productName']")).sendKeys("Adoo");
             report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
         }catch (Exception e){
             e.printStackTrace();
@@ -100,11 +101,36 @@ public class ProductsSteps extends OrderSteps {
 
         Thread.sleep(8000);
     }
+    public static void selectThumbnailImage(){
+        try{
+//            driver.findElement(By.xpath("//input[@formcontrolname='thumbnailImage']")).clear();
+////            driver.findElement(By.xpath("//input[formcontrolname='thumbnailImage']")).sendKeys("D:/Firehouse/T2FNew/T2FAbattoir/src/test/img/Beef.png");
+//            driver.findElement(By.xpath("//input[@formcontrolname='thumbnailImage']")).sendKeys("src/test/img/Beef.png");
+//            driver.findElement(By.xpath("//input[@class='custom-file-input ng-pristine ng-invalid ng-touched']")).clear();
+////            driver.findElement(By.xpath("//input[formcontrolname='thumbnailImage']")).sendKeys("D:/Firehouse/T2FNew/T2FAbattoir/src/test/img/Beef.png");
+//            driver.findElement(By.xpath("//input[@class='custom-file-input ng-pristine ng-invalid ng-touched']")).sendKeys("src/test/img/Beef.png");
+            driver.findElement(By.id("validatedInputGroupCustomFile1")).clear();
+            driver.findElement(By.id("validatedInputGroupCustomFile1")).sendKeys("D:/Firehouse/T2FNew/T2FAbattoir/src/test/img/Beef.png");
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            report.test.log(LogStatus.FAIL,"Button not selected");
+        }
+    }
+    public static void selectDisplayImage(){
+        try{
+            driver.findElement(By.id("validatedInputGroupCustomFile1")).clear();
+            driver.findElement(By.id("validatedInputGroupCustomFile1")).sendKeys("D:/Firehouse/T2FNew/T2FAbattoir/src/test/img/Beef.png");
+        }catch (Exception e){
+            e.printStackTrace();
+            report.test.log(LogStatus.FAIL,"Button not selected");
+        }
+    }
     public static void enterStartingWeightRange() throws InterruptedException {
         try {
             // Click on Create new Product Tab
-            driver.findElement(By.xpath("//input[@class='form-control ng-touched ng-dirty ng-invalid']")).clear();
-            driver.findElement(By.xpath("//input[@class='form-control ng-touched ng-dirty ng-invalid']")).sendKeys("100");
+            driver.findElement(By.xpath("//input[@formcontrolname='startingWeight']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='startingWeight']")).sendKeys("100");
 
             report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
         }catch (Exception e){
@@ -117,8 +143,8 @@ public class ProductsSteps extends OrderSteps {
     public static void enterEndWeightRange() throws InterruptedException {
         try {
             // Click on Create new Product Tab
-            driver.findElement(By.xpath("//input[@class='form-control ng-pristine ng-valid ng-touched']")).clear();
-            driver.findElement(By.xpath("//input[@class='form-control ng-pristine ng-valid ng-touched']")).sendKeys("110");
+            driver.findElement(By.xpath("//input[@formcontrolname='endingWeight']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='endingWeight']")).sendKeys("110");
 
             report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
         }catch (Exception e){
@@ -131,8 +157,8 @@ public class ProductsSteps extends OrderSteps {
     public static void enterNonOrganicPrices() throws InterruptedException {
         try {
             // Click on Create new Product Tab
-            driver.findElement(By.xpath("(//input[@class='form-control ng-valid ng-touched ng-dirty'])[1]")).clear();
-            driver.findElement(By.xpath("(//input[@class='form-control ng-valid ng-touched ng-dirty'])[1]")).sendKeys("1010");
+            driver.findElement(By.xpath("//input[@formcontrolname='nonOrganicPrice']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='nonOrganicPrice']")).sendKeys("1010");
 
             report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
         }catch (Exception e){
@@ -145,8 +171,8 @@ public class ProductsSteps extends OrderSteps {
     public static void enterOrganicPrices() throws InterruptedException {
         try {
             // Click on Create new Product Tab
-            driver.findElement(By.xpath("(//input[@class='form-control ng-valid ng-touched ng-dirty'])[2]")).clear();
-            driver.findElement(By.xpath("(//input[@class='form-control ng-valid ng-touched ng-dirty'])[2]")).sendKeys("1200");
+            driver.findElement(By.xpath("//input[@formcontrolname='organicPrice']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='organicPrice']")).sendKeys("1200");
 
             report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
         }catch (Exception e){
