@@ -1,16 +1,16 @@
 package Products;
 
-public class Tc_uploadOnlyProductThumbnailAndAddProduct extends ProductsSteps{
+public class Tc_UploadOnlyProductDisplayImageAndAddProduct extends ProductsSteps{
     public static void main(String[] args) throws InterruptedException {
-        uploadOnlyProductThumbnailAndAddProduct();
+        uploadOnlyProductDisplayImageAndAddProduct();
     }
 
-    private static void uploadOnlyProductThumbnailAndAddProduct() throws InterruptedException {
+    private static void uploadOnlyProductDisplayImageAndAddProduct() throws InterruptedException {
         openBrowser();
         login();
         mouseHoverOnProductIcon();
         clickCreateNewTab();
-        selectThumbnailImage();
+        selectDisplayImage();
         clickDoneButton();
         signOut();
         reportEnd();

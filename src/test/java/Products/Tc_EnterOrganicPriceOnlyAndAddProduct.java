@@ -1,16 +1,16 @@
 package Products;
 
-public class Tc_enterStartingWeightAndAddProduct extends ProductsSteps {
+public class Tc_EnterOrganicPriceOnlyAndAddProduct extends ProductsSteps{
     public static void main(String[] args) throws InterruptedException {
-        enterStartingWeightAndAddProduct();
+        enterOrganicPriceOnlyAndAddProduct();
     }
 
-    private static void enterStartingWeightAndAddProduct() throws InterruptedException {
+    private static void enterOrganicPriceOnlyAndAddProduct() throws InterruptedException {
         openBrowser();
         login();
         mouseHoverOnProductIcon();
         clickCreateNewTab();
-        enterStartingWeightRange();
+        enterOrganicPrices();
         clickDoneButton();
         signOut();
         reportEnd();

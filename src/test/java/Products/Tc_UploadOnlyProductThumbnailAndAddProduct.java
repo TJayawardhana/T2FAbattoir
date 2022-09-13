@@ -1,16 +1,16 @@
 package Products;
 
-public class Tc_enterOrganicPriceOnlyAndAddProduct extends ProductsSteps{
+public class Tc_UploadOnlyProductThumbnailAndAddProduct extends ProductsSteps{
     public static void main(String[] args) throws InterruptedException {
-        enterOrganicPriceOnlyAndAddProduct();
+        uploadOnlyProductThumbnailAndAddProduct();
     }
 
-    private static void enterOrganicPriceOnlyAndAddProduct() throws InterruptedException {
+    private static void uploadOnlyProductThumbnailAndAddProduct() throws InterruptedException {
         openBrowser();
         login();
         mouseHoverOnProductIcon();
         clickCreateNewTab();
-        enterOrganicPrices();
+        selectThumbnailImage();
         clickDoneButton();
         signOut();
         reportEnd();

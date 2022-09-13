@@ -1,18 +1,18 @@
 package Products;
 
-public class Tc_addProductWithoutProductCategory extends ProductsSteps{
+public class Tc_EnterStartingWeightAndAddProduct extends ProductsSteps {
     public static void main(String[] args) throws InterruptedException {
-        addProductWithoutProductCategory();
+        enterStartingWeightAndAddProduct();
     }
 
-    private static void addProductWithoutProductCategory() throws InterruptedException {
+    private static void enterStartingWeightAndAddProduct() throws InterruptedException {
         openBrowser();
         login();
         mouseHoverOnProductIcon();
         clickCreateNewTab();
-        enterProductName();
         enterStartingWeightRange();
         clickDoneButton();
         signOut();
+        reportEnd();
     }
 }
