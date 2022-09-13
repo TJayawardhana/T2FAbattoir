@@ -1,18 +1,19 @@
 package Products;
 
-public class Tc_enterNonOrganicPriceOnlyAndAddProduct extends ProductsSteps {
+public class Tc_EnterEndWeightAndAddProduct extends ProductsSteps{
     public static void main(String[] args) throws InterruptedException {
-        enterNonOrganicPriceOnlyAndAddProduct();
+        enterEndWeightAndAddProduct();
     }
 
-    private static void enterNonOrganicPriceOnlyAndAddProduct() throws InterruptedException {
+    private static void enterEndWeightAndAddProduct() throws InterruptedException {
         openBrowser();
         login();
         mouseHoverOnProductIcon();
         clickCreateNewTab();
-        enterNonOrganicPrices();
+        enterEndWeightRange();
         clickDoneButton();
         signOut();
         reportEnd();
+
     }
 }

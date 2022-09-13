@@ -101,7 +101,7 @@ public class ProductsSteps extends OrderSteps {
 
         Thread.sleep(8000);
     }
-    public static void selectThumbnailImage(){
+    public static void selectThumbnailImage() throws InterruptedException {
         try{
 //            driver.findElement(By.xpath("//input[@formcontrolname='thumbnailImage']")).clear();
 ////            driver.findElement(By.xpath("//input[formcontrolname='thumbnailImage']")).sendKeys("D:/Firehouse/T2FNew/T2FAbattoir/src/test/img/Beef.png");
@@ -116,8 +116,9 @@ public class ProductsSteps extends OrderSteps {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL,"Button not selected");
         }
+        Thread.sleep(8000);
     }
-    public static void selectDisplayImage(){
+    public static void selectDisplayImage() throws InterruptedException {
         try{
             driver.findElement(By.id("validatedInputGroupCustomFile1")).clear();
             driver.findElement(By.id("validatedInputGroupCustomFile1")).sendKeys("D:/Firehouse/T2FNew/T2FAbattoir/src/test/img/Beef.png");
@@ -125,6 +126,7 @@ public class ProductsSteps extends OrderSteps {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL,"Button not selected");
         }
+        Thread.sleep(8000);
     }
     public static void enterStartingWeightRange() throws InterruptedException {
         try {
