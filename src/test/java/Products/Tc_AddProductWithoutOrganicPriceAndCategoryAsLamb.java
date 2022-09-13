@@ -1,22 +1,22 @@
 package Products;
 
-public class Tc_AddProductWithoutNonOrganicPriceAndCategoryAsGoat extends ProductsSteps{
+public class Tc_AddProductWithoutOrganicPriceAndCategoryAsLamb extends ProductsSteps{
     public static void main(String[] args) throws InterruptedException {
-        addProductWithoutNonOrganicPriceAndCategoryAsGoat();
+        addProductWithoutOrganicPriceAndCategoryAsLamb();
     }
 
-    private static void addProductWithoutNonOrganicPriceAndCategoryAsGoat() throws InterruptedException {
+    private static void addProductWithoutOrganicPriceAndCategoryAsLamb() throws InterruptedException {
         openBrowser();
         login();
         mouseHoverOnProductIcon();
         clickCreateNewTab();
-        selectProductAsGoat();
+        selectProductAsLamb();
         enterProductName();
         selectThumbnailImage();
         selectDisplayImage();
         enterStartingWeightRange();
         enterEndWeightRange();
-        enterOrganicPrices();
+        enterNonOrganicPrices();
         clickDoneButton();
         signOut();
         reportEnd();
