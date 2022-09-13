@@ -1,17 +1,17 @@
 package Products;
 
-public class Tc_AddProductWithoutProductNameAndCategoryAsLamb extends ProductsSteps{
+public class Tc_AddProductWithoutProductThumbnailAndCategoryAsLamb extends ProductsSteps{
     public static void main(String[] args) throws InterruptedException {
-        addProductWithoutProductNameAndCategoryAsLamb();
+        addProductWithoutProductThumbnailAndCategoryAsLamb();
     }
 
-    private static void addProductWithoutProductNameAndCategoryAsLamb() throws InterruptedException {
+    private static void addProductWithoutProductThumbnailAndCategoryAsLamb() throws InterruptedException {
         openBrowser();
         login();
         mouseHoverOnProductIcon();
         clickCreateNewTab();
         selectProductAsLamb();
-        selectThumbnailImage();
+        enterProductName();
         selectDisplayImage();
         enterStartingWeightRange();
         enterEndWeightRange();
