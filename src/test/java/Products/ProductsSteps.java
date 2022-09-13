@@ -139,6 +139,19 @@ public class ProductsSteps extends OrderSteps {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
         }
+        Thread.sleep(8000);
+    }
+    public static void enterInvalidStartingWeightRange() throws InterruptedException {
+        try {
+            // Click on Create new Product Tab
+            driver.findElement(By.xpath("//input[@formcontrolname='startingWeight']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='startingWeight']")).sendKeys("thousand");
+
+            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+        }catch (Exception e){
+            e.printStackTrace();
+            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+        }
 
         Thread.sleep(8000);
     }
@@ -156,11 +169,39 @@ public class ProductsSteps extends OrderSteps {
 
         Thread.sleep(8000);
     }
+    public static void enterInvalidEndWeightRange() throws InterruptedException {
+        try {
+            // Click on Create new Product Tab
+            driver.findElement(By.xpath("//input[@formcontrolname='endingWeight']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='endingWeight']")).sendKeys("thousand Five");
+
+            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+        }catch (Exception e){
+            e.printStackTrace();
+            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+        }
+
+        Thread.sleep(8000);
+    }
     public static void enterNonOrganicPrices() throws InterruptedException {
         try {
             // Click on Create new Product Tab
             driver.findElement(By.xpath("//input[@formcontrolname='nonOrganicPrice']")).clear();
             driver.findElement(By.xpath("//input[@formcontrolname='nonOrganicPrice']")).sendKeys("1010");
+
+            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+        }catch (Exception e){
+            e.printStackTrace();
+            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+        }
+
+        Thread.sleep(8000);
+    }
+    public static void enterInvalidNonOrganicPrices() throws InterruptedException {
+        try {
+            // Click on Create new Product Tab
+            driver.findElement(By.xpath("//input[@formcontrolname='nonOrganicPrice']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='nonOrganicPrice']")).sendKeys("thousand Five and Fifty Cents ");
 
             report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
         }catch (Exception e){
@@ -185,6 +226,22 @@ public class ProductsSteps extends OrderSteps {
         Thread.sleep(8000);
 
     }
+    public static void enterInvalidOrganicPrices() throws InterruptedException {
+        try {
+            // Click on Create new Product Tab
+            driver.findElement(By.xpath("//input[@formcontrolname='organicPrice']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='organicPrice']")).sendKeys("Five thousand and Fifty Cents");
+
+            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+        }catch (Exception e){
+            e.printStackTrace();
+            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+        }
+
+        Thread.sleep(8000);
+
+    }
+
 //    clickDoneButton();
 
 
