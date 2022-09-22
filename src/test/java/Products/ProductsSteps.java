@@ -155,6 +155,21 @@ public class ProductsSteps extends OrderSteps {
 
         Thread.sleep(8000);
     }
+    public static void enterMinusValueForStartWeight() throws InterruptedException {
+        try {
+            // Click on Create new Product Tab
+            driver.findElement(By.xpath("//input[@formcontrolname='startingWeight']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='startingWeight']")).sendKeys("-1000");
+
+            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+        }catch (Exception e){
+            e.printStackTrace();
+            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+        }
+
+        Thread.sleep(8000);
+    }
+
     public static void enterEndWeightRange() throws InterruptedException {
         try {
             // Click on Create new Product Tab
@@ -182,6 +197,69 @@ public class ProductsSteps extends OrderSteps {
         }
 
         Thread.sleep(8000);
+    }
+    public static void enterMinusValueForEndWeight() throws InterruptedException {
+        try {
+            // Click on Create new Product Tab
+            driver.findElement(By.xpath("//input[@formcontrolname='startingWeight']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='startingWeight']")).sendKeys("-1100");
+
+            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+        }catch (Exception e){
+            e.printStackTrace();
+            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+        }
+
+        Thread.sleep(8000);
+    }
+
+    public static void enterSameStartAndEndWeightValue() throws InterruptedException {
+        try {
+            // Click on Create new Product Tab
+            driver.findElement(By.xpath("//input[@formcontrolname='startingWeight']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='startingWeight']")).sendKeys("100");
+
+            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+        }catch (Exception e){
+            e.printStackTrace();
+            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+        }
+        Thread.sleep(2000);
+        try {
+            // Click on Create new Product Tab
+            driver.findElement(By.xpath("//input[@formcontrolname='endingWeight']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='endingWeight']")).sendKeys("100");
+
+            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+        }catch (Exception e){
+            e.printStackTrace();
+            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+        }
+        Thread.sleep(5000);
+    }
+    public static void enterEndWeightBiggerThanStartWeight() throws InterruptedException {
+        try {
+            // Click on Create new Product Tab
+            driver.findElement(By.xpath("//input[@formcontrolname='startingWeight']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='startingWeight']")).sendKeys("90");
+
+            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+        }catch (Exception e){
+            e.printStackTrace();
+            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+        }
+        Thread.sleep(2000);
+        try {
+            // Click on Create new Product Tab
+            driver.findElement(By.xpath("//input[@formcontrolname='endingWeight']")).clear();
+            driver.findElement(By.xpath("//input[@formcontrolname='endingWeight']")).sendKeys("100");
+
+            report.test.log(LogStatus.PASS, "Successfully Clicked Booking Tab");
+        }catch (Exception e){
+            e.printStackTrace();
+            report.test.log(LogStatus.FAIL,"Booking Tab is not Clickable");
+        }
+        Thread.sleep(5000);
     }
     public static void enterNonOrganicPrices() throws InterruptedException {
         try {
@@ -243,7 +321,21 @@ public class ProductsSteps extends OrderSteps {
     }
 
 //    clickDoneButton();
+//Click Cancel IN Add Product
+    public static void clickCancelInAddProduct() throws InterruptedException {
+        //button[@class='btn btn-preview mr-1']
+        try {
+            // Click on Create new Product Tab
+            driver.findElement(By.xpath("//button[@class='btn btn-preview mr-1']")).click();
 
+            report.test.log(LogStatus.PASS, "Successfully Clicked Cancel Button in Adding Product Page");
+        }catch (Exception e){
+            e.printStackTrace();
+            report.test.log(LogStatus.FAIL,"Cancel Button is not Clickable in Adding Product Page ");
+        }
+
+        Thread.sleep(8000);
+    }
 
 
 }
