@@ -158,6 +158,7 @@ public class LoginSteps extends OpenWeb {
         try {
             //Click on SignIn Button
             driver.findElement(By.xpath("//button[@id=\"signinButton\"]")).click();
+
             report.test.log(LogStatus.PASS, "Clicked Button Successfully");
         } catch (Exception e) {
             e.printStackTrace();

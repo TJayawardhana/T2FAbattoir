@@ -38,7 +38,7 @@ public class OpenWeb {
 
         // Maximise the Browser
         driver.manage().window().maximize();
-        Thread.sleep(7000);
+
     }
 
     //Implicitly Waits
