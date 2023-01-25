@@ -15,12 +15,14 @@ public class tc_AbbatoirLoginWithValidCredentials {
         report.createReport("tc_AbbatoirLoginWithValidCredentials");
 
         // Open Browser
-        System.setProperty("webdriver.chrome.driver","D:\\T2FAbattoir\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","E:\\T2FAbattoir\\driver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
+
+
 
         try {
             // Open URL
-            driver.get("https://qa-portal.trade2farm.ie/login");
+            driver.get("https://dev-portal.trade2farm.ie/session/sign-in");
             report.test.log(LogStatus.PASS,"Successfully Navigated");
         }catch (Exception e){
             e.printStackTrace();
