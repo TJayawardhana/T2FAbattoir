@@ -44,11 +44,11 @@ public class OrderSteps extends InternalUserSteps {
             driver.findElement(By.xpath("//a[contains(.,'Orders')]")).click();
 //            driver.findElement(By.xpath("//a[contains(@href, '/abattoir/orders')]")).click();
 //            driver.findElement(By.xpath("//li/a")).click();
-            report.test.log(LogStatus.PASS, "Successfully Clicked On A Order Tab");
+            report.test.log(LogStatus.PASS, "Successfully Clicked On A Order in Sub Nav");
             implicitlyWaits();
         }catch (Exception e){
             e.printStackTrace();
-            report.test.log(LogStatus.FAIL,"Order is not Clickable");
+            report.test.log(LogStatus.FAIL,"Order is not Clickable in Sub nav");
         }
 
 
@@ -60,10 +60,10 @@ public class OrderSteps extends InternalUserSteps {
             Actions action = new Actions(driver);
             action.moveToElement(driver.findElement(By.xpath("(//div[@class='t_date'])[1]"))).perform();
 
-            report.test.log(LogStatus.PASS, "Clicked on My customer successfully");
+            report.test.log(LogStatus.PASS, "Hover on Order tab in nav successfully");
         } catch (Exception e) {
             e.printStackTrace();
-            report.test.log(LogStatus.FAIL, "Clicked on My Customer Unsuccessfully ");
+            report.test.log(LogStatus.FAIL, "Hover on Order tab in nav Unsuccessfully ");
         }
     }
     public static void clickOnCreateNewAOrder() {
@@ -224,6 +224,7 @@ public class OrderSteps extends InternalUserSteps {
         }
         implicitlyWaits();
     }
+    ///Existing Order
     public static void clickOnAOrder(){
 
         try {
@@ -235,4 +236,5 @@ public class OrderSteps extends InternalUserSteps {
         }
         implicitlyWaits();
     }
+
 }

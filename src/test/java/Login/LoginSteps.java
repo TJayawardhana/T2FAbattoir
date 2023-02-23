@@ -60,7 +60,7 @@ public class LoginSteps extends OpenWeb {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL,"Entered Correct Password");
         }
-        Thread.sleep(5000);
+        implicitlyWaits();
     }
 
     static void enterInvalidEmail() throws InterruptedException {
@@ -76,7 +76,7 @@ public class LoginSteps extends OpenWeb {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL,"Entered Correct Username");
         }
-        Thread.sleep(5000);
+        implicitlyWaits();
     }
 
 
@@ -100,7 +100,7 @@ public class LoginSteps extends OpenWeb {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL,"Entered Wrong Username");
         }
-        Thread.sleep(5000);
+        implicitlyWaits();
     }
 
     static void enterValidPassword() throws InterruptedException {
@@ -117,7 +117,7 @@ public class LoginSteps extends OpenWeb {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "Entered Wrong Password");
         }
-        Thread.sleep(5000);
+        implicitlyWaits();
     }
 
     static void enterWrongEmailFormat() throws InterruptedException {
@@ -130,7 +130,7 @@ public class LoginSteps extends OpenWeb {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "Correct User Name Format");
         }
-        Thread.sleep(5000);
+        implicitlyWaits();
     }
 
     //Can't be
@@ -144,7 +144,7 @@ public class LoginSteps extends OpenWeb {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "Correct Password Format");
         }
-        Thread.sleep(5000);
+        implicitlyWaits();
     }
 
 
@@ -164,7 +164,7 @@ public class LoginSteps extends OpenWeb {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "Button is not Clicked");
         }
-        Thread.sleep(5000);
+        implicitlyWaits();
     }
 
     static void clickSignOut() throws InterruptedException {
@@ -179,7 +179,7 @@ public class LoginSteps extends OpenWeb {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "SignOut Button is not Clicked");
         }
-        Thread.sleep(5000);
+        implicitlyWaits();
     }
 
     static void clickUserDropdown() throws InterruptedException {
@@ -193,7 +193,7 @@ public class LoginSteps extends OpenWeb {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "User DropDown Icon is not Clicked");
         }
-        Thread.sleep(5000);
+        implicitlyWaits();
     }
 
     public static void closeDrive() throws InterruptedException {
@@ -205,14 +205,14 @@ public class LoginSteps extends OpenWeb {
             e.printStackTrace();
             report.test.log(LogStatus.FAIL, "Drive Quit Unsuccessfully");
         }
-        Thread.sleep(5000);
+        implicitlyWaits();
     }
 
     public static void login() throws InterruptedException {
         enterValidEmail();
         enterValidPassword();
         clickSignIn();
-        Thread.sleep(5000);
+        implicitlyWaits();
 
     }
 
