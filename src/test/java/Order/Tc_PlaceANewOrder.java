@@ -6,22 +6,25 @@ public class Tc_PlaceANewOrder extends OrderSteps {
     }
 
     private static void placeANewOrder() throws InterruptedException {
+
+
         openBrowser();
-        Thread.sleep(5000);
+        report.createReport("Login.tc_Abattoir_PlaceANewOrder");
         login();
-        clickOrderTab();
+        ClickOnOrderTabNav();
+        hoverOnOrderTabNav();
         clickOnCreateNewAOrder();
+        searchAUser();
+        clickSelectUserButton();
         selectCategory();
         selectProductOrderAdding();
         selectPreferredWeightRangeInOrderAdd();
         selectPreferredAvailableOptionInOrderAdd();
-        selectaDateInAddingOrder();
-
+        selectADateInAddingOrder();
         addQuantity();
         clickSaveButtonOrderAdd();
-
-        searchAUser();
-        clickSelectUserButton();
-
+        clickShippingMethodAsPickUpOrder();
+        clickPlaceAnOrder();
+        reportEnd();
     }
 }

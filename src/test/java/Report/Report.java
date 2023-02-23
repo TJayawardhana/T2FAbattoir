@@ -21,10 +21,9 @@ public class Report {
             }
         } else {
             System.out.println("Folder alreadyExists.");
-            report = new ExtentReports(System.getProperty("user.dir") + File.separator + "Reports" + File.separator + tcName+"report.html");
+            report = new ExtentReports(System.getProperty("user.dir") + File.separator + "Reports" + File.separator + tcName+"Report.html");
             test = report.startTest(tcName);
         }
-
 
     }
 

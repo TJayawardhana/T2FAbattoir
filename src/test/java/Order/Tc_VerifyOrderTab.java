@@ -8,7 +8,7 @@ public class Tc_VerifyOrderTab extends OrderSteps {
     private static void verifyOrderTab() throws InterruptedException {
         openBrowser();
         login();
-        clickOrderTab();
+        ClickOnOrderTabNav();
 //      verifyOrderPageHeader();
         signOut();
         reportEnd();

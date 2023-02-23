@@ -38,13 +38,15 @@ public class OpenWeb {
 
         // Maximise the Browser
         driver.manage().window().maximize();
+        implicitlyWaits();
 
     }
 
     //Implicitly Waits
     public static void implicitlyWaits() {
         //Implicitly Waits
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
     }
 
 }

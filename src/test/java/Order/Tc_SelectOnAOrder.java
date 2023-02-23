@@ -7,7 +7,9 @@ public class Tc_SelectOnAOrder extends OrderSteps{
     private static void selectAOrder() throws InterruptedException {
         openBrowser();
         login();
-        clickOrderTab();
+        ClickOnOrderTabNav();
+        hoverOnOrderTabNav();
+        clickOnOrderSubNav();
         clickOnAOrder();
         signOut();
         reportEnd();
