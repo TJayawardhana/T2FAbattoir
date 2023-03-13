@@ -237,4 +237,17 @@ public class OrderSteps extends InternalUserSteps {
         implicitlyWaits();
     }
 
+    //Order Update
+    public static void OrderStatusUpdate(){
+
+        try {
+            driver.findElement(By.xpath("(//td[@class='new_order'])[1]")).click();
+            report.test.log(LogStatus.PASS, "Successfully Click On a Order ");
+        }catch (Exception e){
+            e.printStackTrace();
+            report.test.log(LogStatus.FAIL,"Order Clicked Unsuccessful");
+        }
+        implicitlyWaits();
+    }
+
 }
